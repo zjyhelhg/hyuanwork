@@ -1,0 +1,41 @@
+import NavBar from './components/NavBar'
+import Hero from './components/Hero'
+import CompanyLogo from './components/CompanyLogo'
+import PurposeSection from './components/PurposeSection'
+import FeaturesSection from './components/FeaturesSection'
+import ScheduleSection from './components/ScheduleSection'
+import MonitorSection from './components/MonitorSection'
+import PricingSection from './components/PricingSection'
+import ServicesSection from './components/ServicesSection'
+import TestimonialSection from './components/TestimonialSection'
+import NewsletterSection from './components/NewsletterSection'
+import Footer from './components/Footer'
+
+
+import './App.css'
+
+function App() {
+ 
+  return (
+    <main className='relative min-h-screen overflow-x-hidden'>
+      <div className='absolute -top-28 -ml-28 bg-gradient-to-tr from-indigo-500/20 to-pink-500/20  blur-[80px] -z-10  w-[500px] h-[500px]'>
+      </div>
+
+       <NavBar></NavBar>
+       <Hero></Hero>
+       <CompanyLogo></CompanyLogo>
+       <PurposeSection></PurposeSection>
+       <FeaturesSection></FeaturesSection>
+       <ScheduleSection></ScheduleSection>
+       <MonitorSection></MonitorSection>
+       <PricingSection></PricingSection>
+       <ServicesSection></ServicesSection>
+       <TestimonialSection></TestimonialSection>
+       <NewsletterSection></NewsletterSection>
+       <Footer></Footer>
+
+    </main>
+  )
+}
+
+export default App
