@@ -6,13 +6,13 @@ const PurposeSection = () => {
   const features = [
     {
       icon: "🟣", // Replace with your actual icon component or image
-      title: "Built for impact",
-      description: "We identify and nurture a truly diverse team of designers, developers and marketers"
+      title: "专为影响而生",
+      description: "我们寻找并培养一支真正多元化的设计师、开发人员和营销人员团队"
     },
     {
       icon: "🔴", // Replace with your actual icon component or image
-      title: "In sync with you",
-      description: "We work the way you do by adapting to your workflows and rhythm we aim to blend in for a seamless."
+      title: "与您同步",
+      description: "我们按照您的方式工作，适应您的工作流程和节奏，力求无缝融合。"
     }
   ]
   return (
@@ -28,8 +28,8 @@ const PurposeSection = () => {
           initial='hidden'
           whileInView='show'
           className=' py-10 mt-10'>
-            <p className='text-medium text-purple-600 font-semibold mb-3'>ACHIEVE MORE</p>
-            <h2 className='text-3xl text-gray-900 md:text-4xl md:w-4/5 w-full font-bold '>Purpose of a convoy is keep your team</h2>
+            <p className='text-medium text-purple-600 font-semibold mb-3'>取得更多成就</p>
+            <h2 className='text-3xl text-gray-900 md:text-4xl md:w-4/5 w-full font-bold '>为团队而生</h2>
           </motion.div>
           {/* grid 2 */}
           <motion.div

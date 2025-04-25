@@ -25,18 +25,19 @@ const Hero = () => {
         initial = 'hidden'
         whileInView = "show"
         
-        className='text-4xl mt-10 font-bold md:text-5xl lg:text-5xl leading-tight'>We boost the growth for
-          <span className='text-blue-500 inline-block relative'> Startup to Fortune 500
+        className='text-4xl mt-10 font-bold md:text-5xl lg:text-5xl leading-tight'>欢迎来到
+          <span className='text-blue-500 inline-block relative'> 昊元工作室
             <span className='absolute w-full bottom-0 h-0.5 left-0 bg-gray-200/80'></span>
-          </span>Companies<span className='mt-2 animate-pulse'>⏰</span>
+          </span><span className='mt-2 animate-pulse'>⏰</span><br />
+          <span className='text-3xl'>Welcome to Haoyuan Studio</span>
         </motion.h1>
 
         <motion.p
         variants={fadeIn('up', 0.4)}
         initial='hidden'
         whileInView='show'
-        className='max-w-xl md:text-xl text-gray-600'>Get the most accurate leads, sales people training and conversions, tools and more -- all within the
-          same one billing.
+        className='max-w-xl md:text-xl text-gray-600'>获得最准确的线索，销售人员培训和转换，工具和更多-所有在同一个账单。
+ 
         </motion.p>
 
         <motion.div 
@@ -45,7 +46,7 @@ const Hero = () => {
          whileInView='show'
         className='flex max-w-md  gap-1 mb-20'>
           <input type="text" placeholder='Enter your email' className='flex-1 sm:-mr-2 px-6 py-4 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition-all' />
-          <button className='bg-blue-600 text-white px-8 py-4 cursor-pointer hover:bg-blue-700 shadow-lg hover:shadow-blue-400 rounded-lg text-[18px] ml-5'>→</button>
+          <button className='bg-blue-600 text-white px-8 py-4 cursor-pointer hover:bg-blue-700 shadow-lg hover:shadow-blue-400 rounded-lg text-[18px] ml-5'><a href="#new">→</a> </button>
         </motion.div>
 
 

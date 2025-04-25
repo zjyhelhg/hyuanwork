@@ -14,12 +14,12 @@ const MonitorSection = () => {
         {/* left */}
 
         <motion.div
-           variants={fadeIn('left', 0.4)}
-                  initial='hidden'
-                  whileInView='show'
-        className='w-full md:w-1/2'>
+          variants={fadeIn('left', 0.4)}
+          initial='hidden'
+          whileInView='show'
+          className='w-full md:w-1/2'>
           <p className='text-green-500 font-semibold' >MONITOR</p>
-          <h2 className='text-3xl md:text-4xl leading-tight mt-4 mb-3 font-semibold text-neutral-900'>Introducing best mobile Carousel
+          <h2 className='text-3xl md:text-4xl leading-tight mt-4 mb-3 font-semibold text-neutral-900'>我们专注设计数字交互解决方案，最新产品融合先进技术与创意理念。
           </h2>
 
           <p className='text-gray-600 mt-5 mb-4'>Take control of your time and boost productivity with our intelligent scheduling system.
@@ -37,10 +37,10 @@ const MonitorSection = () => {
 
         {/* right */}
         <motion.div
-           variants={fadeIn('right', 0.4)}
-                  initial='hidden'
-                  whileInView='show'
-        className='w-full md:w-1/2'>
+          variants={fadeIn('right', 0.4)}
+          initial='hidden'
+          whileInView='show'
+          className='w-full md:w-1/2'>
           <img src={monitorCardImg} alt="MonitorCard Image" />
         </motion.div>
       </div>

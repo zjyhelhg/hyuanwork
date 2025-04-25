@@ -11,10 +11,10 @@ const NavBar = () => {
   const [acticeLink, setActiveLink] = useState('#home')
 
   const navLinks = [
-    { href: '#home', label: 'Home' },
-    { href: '#about', label: 'About Us' },
-    { href: '#services', label: 'Our Services' },
-    { href: '#testimonials', label: 'Testimonials' }
+    { href: '#home', label: '首页' },
+    { href: '#about', label: '关于我们' },
+    { href: '#services', label: '提供服务' },
+    { href: '#testimonials', label: '表彰' }
   ]
   return (
     <motion.nav
@@ -23,12 +23,11 @@ const NavBar = () => {
       whileInView="show"
       viewport={{once: true}}
 
-
         className='top-0 h-[90px] left-0 right-0 border-b shadow-md  z-50 backdrop-blur-md border-gray-100 fixed  bg-white/90 '>
       <div className='w-full   mx-auto flex  items-center justify-between  lg:px-25   md:h-20 h-16  '>
 
         {/* logo Part */}
-        <div className='flex items-center gap-1 cursor-pointer'>
+        <div className='flex items-center gap-1 cursor-pointer '>
           <div className='w-4 h-4 rounded-full bg-blue-600 ml-5 opacity-70 hover:opacity-100 transition-opacity'></div>
           <div className='w-4 h-4 rounded-full bg-red-600 -ml-2 opacity-70 hover:opacity-100  transition-opacity  '></div>
         </div>
@@ -57,7 +56,7 @@ const NavBar = () => {
 
         {/* get in touch Button */}
         <button className='hidden md:block bg-blue-600 text-white px-6 py-2.5 rounded-lg text-sm hover:bg-blue-700 transition-all hover:shadow-lg hover:shadow-blue-300 '>
-          <a href="#new">Get in touch</a>
+          <a href="#new">取得联系</a>
         </button>
 
       </div>
@@ -79,7 +78,7 @@ const NavBar = () => {
               }
             </div>
 
-            <button className='  w-full bg-blue-600 text-white px-6 py-2.5 mt-5   rounded-lg text-sm  hover:bg-blue-700 transition-all hover:shadow-lg  hover:shadow-blue-300'>
+            <button className='w-full bg-blue-600 text-white px-6 py-2.5 mt-5   rounded-lg text-sm  hover:bg-blue-700 transition-all hover:shadow-lg  hover:shadow-blue-300'>
               <a href="#new">Get in touch</a>
             </button>
           </div>

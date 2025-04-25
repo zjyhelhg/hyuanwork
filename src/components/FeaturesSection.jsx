@@ -6,18 +6,18 @@ const FeaturesSection = () => {
   const features = [
     {
       icon: "🔍",
-      title: "Find out what you need",
-      description: "We present you a proposal and discuss nitty-gritty like"
+      title: "找出你需要什么",
+      description: "我们向你提出一个建议，然后讨论细节问题"
     },
     {
       icon: "⚙️",
-      title: "Work out the details",
-      description: "Communication protocols apart from engagement models"
+      title: "细节上的微化处理",
+      description: "小细节，大改变，满足审美和逻辑"
     },
     {
       icon: "🚀",
-      title: "We get to work fast",
-      description: "Protocols apart from engage models, pricing billing"
+      title: "工作效率快速",
+      description: "统一方案，统一实施"
     }
   ]
   return (
@@ -28,8 +28,8 @@ const FeaturesSection = () => {
       initial='hidden'
       whileInView='show'
       className='text-center mb-6'>
-        <h2 className='text-3xl font-bold mb-4'>How can we help your business?</h2>
-        <p className='text-gray-600'>When you resell besnik, you build trust and increase</p>
+        <h2 className='text-3xl font-bold mb-4'>我能为你做的</h2>
+        <p className='text-gray-600'>What can we do for your business?</p>
       </motion.div>
 
       {/* features box */}
@@ -62,7 +62,7 @@ const FeaturesSection = () => {
        whileInView='show'
       className='text-center mt-19'>
         <button className='relative   bg-blue-600 text-white rounded-full hover:bg-blue-700 transition-colors px-8 py-3  cursor-pointer'>
-          Become a Partner
+          <a href="#new">Become a Dreamer</a>
           <div className='absolute rounded-full    -z-10 top-0 left-0 w-full h-full bg-blue-500/80 blur-xl  '></div>
         </button>
       </motion.div>

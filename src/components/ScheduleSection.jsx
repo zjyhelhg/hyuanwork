@@ -26,8 +26,7 @@ const ScheduleSection = () => {
         whileInView='show'
         className='w-full md:w-1/2'>
           <p className='text-orange-500 font-semibold' >SCHEDULE</p>
-          <h2 className='text-3xl md:text-4xl leading-tight mt-4 mb-3 font-semibold text-neutral-900'>Streamline Your Business
-            With Smart Scheduling Solution
+          <h2 className='text-3xl md:text-4xl leading-tight mt-4 mb-3 font-semibold text-neutral-900'>“蓬勃发展的用户社区，持续增长的活跃度。选择我们，您的产品将拥有更广阔的市场和更强的生命力。”
           </h2>
 
           <p className='text-gray-600 mt-5 mb-4'>Take control of your time and boost productivity with our intelligent scheduling system.

@@ -10,26 +10,26 @@ const ServicesSection = () => {
   const services = [
     {
       icon: <BsStack className="w-8 h-8 text-indigo-600" />,
-      title: "Web Design",
-      description: "One for all and all for one, Muskehounds are always ready.",
+      title: "网页设计",
+      description: "一心为众，众心为一，总是准备就绪。是否想要一个属于自己的个人网站？",
       link: "#learn-more"
     },
     {
       icon: <HiLightBulb className="w-8 h-8 text-amber-400" />,
-      title: "Ad-Creatives",
-      description: "Alphabet Village and the subline of her own road.",
+      title: "广告创意",
+      description: "匠心开发，助力企业智启未来。",
       link: "#learn-more"
     },
     {
       icon: <FiSettings className="w-8 h-8 text-red-400" />,
-      title: "Automation",
-      description: "Little Blind Text should turn around and return.",
+      title: "移动端设计",
+      description: "专注移动体验，赋能指尖未来。",
       link: "#learn-more"
     },
     {
       icon: <BiTime className="w-8 h-8 text-cyan-400" />,
-      title: "Infographics",
-      description: "Nothing the copy said could convince her.",
+      title: "Web 安全服务",
+      description: "网站防护升级，守护数据安全。",
       link: "#learn-more"
     }
   ]
@@ -44,12 +44,12 @@ const ServicesSection = () => {
             variants={textVariant(0.4)}
             initial='hidden'
             whileInView='show'
-            className='text-3xl md:text-4xl font-bold mb-6 md:w-4/5'>Future of support with new shape</motion.h2>
+            className='text-3xl md:text-4xl font-bold mb-6 md:w-4/5'>我们的服务类型，多元技术服务，助力企业数字升级</motion.h2>
           <motion.p
             variants={textVariant(0.4)}
             initial='hidden'
             whileInView='show'
-            className='text-gray-600 text-lg mb-4 md:w-4/5'>Discuss your goals, determine success metrics, identify problems</motion.p>
+            className='text-gray-600 text-lg mb-4 md:w-4/5'>讨论你的目标，确定成功的标准，找出问题</motion.p>
 
           <div className='space-y-4'>
             <motion.div
@@ -62,21 +62,25 @@ const ServicesSection = () => {
                   <div className='w-2.5  h-2.5 bg-indigo-600 rounded-full'></div>
                 </div>
 
-                <span className='text-gray-600'>UX design content strategy</span>
+                <span className='text-gray-600'>用户体验设计内容策略</span>
               </div>
               <div className='flex items-center gap-2'>
                 <div className='w-5 h-5 bg-indigo-100 rounded-full flex justify-center items-center'>
                   <div className='w-2.5  h-2.5 bg-indigo-600 rounded-full'></div>
                 </div>
 
-                <span className='text-gray-600'>development bring</span>
+                <span className='text-gray-600'>优化界面内容，提升用户体验感。</span>
               </div>
             </motion.div>
             <motion.button
+             
                variants={fadeIn('right', 0.4)}
                initial='hidden'
                whileInView='show'
-            className='mt-8 bg-indigo-600 text-white px-8 py-3  cursor-pointer rounded-full hover:bg-indigo-700 transition-colors'>Get Started</motion.button>
+            className='mt-8 bg-indigo-600 text-white px-8 py-3  cursor-pointer rounded-full hover:bg-indigo-700 transition-colors'>
+              
+              <a href="#new">Get Start</a>
+            </motion.button>
           </div>
         </div>
 

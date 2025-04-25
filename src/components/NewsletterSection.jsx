@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { fadeIn  } from '../utils/motion'
 const NewsletterSection = () => {
   return (
-    <motion.section
+    <motion.section  id='new'
     variants={fadeIn('right', 0.4)}
     initial='hidden'
     whileInView='show'
@@ -17,20 +17,22 @@ const NewsletterSection = () => {
           <div className='relative flex flex-col lg:flex-row justify-between items-center lg:gap-12 gap-8 '>
             <div className=' max-w-lg text-center md:text-left   '>
               {/* left content */}
-              <h2 className='text-2xl  font-semibold text-white lg:text-4xl sm:text-3xl  mb-5'>Subscribe newsletter</h2>
-              <p className='text-blue-100 text-sm  sm:text-base '>Best cooks and best deliver guys all at your service. Hot tasty food</p>
+              <h2 className='text-2xl  font-semibold text-white lg:text-4xl sm:text-3xl  mb-5'>知己知彼，请联系我们：</h2>
+              <p className='text-blue-100 text-sm  sm:text-base '>最好的服务为你准备，最好的想法你来提议</p>
 
             </div>
             {/* right content */}
-            <div className='flex flex-col sm:flex-row sm:gap-0 text-left'>
-              <input type="email" placeholder='Enter your email address'
-                className='w-full sm:w-auto h-auto md:w-80 px-4  bg-white sm:py-4 sm:rounded-l-xl sm:rounded-r-none  focus:outline-none rounded-xl'
-              />
+            <div className='flex text-white/90   sm:flex-row sm:gap-0 text-left'>
 
-              <button className='w-full flex bg-green-500 sm:w-auto cursor-pointer text-white px-6 sm:px-8 py-3 sm:py-5 rounded-xl sm:rounded-none sm:rounded-r-lg '>
-                <span>Discover</span>
-                <HiArrowRight className='size-5'></HiArrowRight>
-              </button>
+             <div className='text-xl flex-col w-full'>
+             <p>电话: <span> 17771931378 / 15571959852</span> 
+             
+              </p> <br />
+              <p>邮箱: <span> 1516371630 / 2569815413 @qq.com</span> </p>
+              
+
+             
+             </div>
             </div>
           </div>
 

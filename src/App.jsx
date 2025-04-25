@@ -23,15 +23,14 @@ function App() {
 
        <NavBar></NavBar>
        <Hero></Hero>
-       <CompanyLogo></CompanyLogo>
        <PurposeSection></PurposeSection>
        <FeaturesSection></FeaturesSection>
        <ScheduleSection></ScheduleSection>
        <MonitorSection></MonitorSection>
-       <PricingSection></PricingSection>
        <ServicesSection></ServicesSection>
        <TestimonialSection></TestimonialSection>
        <NewsletterSection></NewsletterSection>
+       <CompanyLogo></CompanyLogo>
        <Footer></Footer>
 
     </main>

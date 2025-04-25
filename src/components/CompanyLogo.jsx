@@ -1,12 +1,13 @@
 import React from 'react'
-import slack from '../assets/slack.png'
-import amazon from '../assets/amazon.png'
-import woocommerce from '../assets/woocommerce.png'
-import meundies from '../assets/meundies.png'
-import sitepoint from '../assets/sitepoint.png'
-
+import tailwindCSS from '../assets/tailwindCSS.png'
+import nextjslogo from '../assets/nextjs-logo.webp'
+import nuxt from '../assets/logo-green-black.png'
+import vuelogo from '../assets/vueLogo.png'
+import supabase from '../assets/supabase.png'
+import prismalogo from '../assets/prismalogo.png'
+import iside from '../assets/iside.png'
 const companyLogo = () => {
-  const logos = [slack, amazon, woocommerce, meundies, sitepoint]
+  const logos = [prismalogo,tailwindCSS, nextjslogo, nuxt, vuelogo, supabase,iside]
   return (
 
     <div className='w-full py-20  mx-auto overflow-hidden container flex flex-col sm:flex-row items-start    '>

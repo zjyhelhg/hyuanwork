@@ -69,6 +69,7 @@ export const fadeIn = (direction, delay) => {
   };
   
   export const scale = (delay) => {
+    
     return {
       hidden: {
         scale: 0,
