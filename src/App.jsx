@@ -36,4 +36,21 @@ function App() {
   )
 }
 
+<script type="application/ld+json">
+{`
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "昊元工作室",
+  "url": "https://hyuanwork.cn/",
+  "logo": "https://yourdomain.com/logo.png",
+  "sameAs": [
+    "https://www.facebook.com/yourpage",
+    "https://twitter.com/yourpage"
+  ]
+}
+`}
+</script>
+
+
 export default App
