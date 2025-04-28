@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { HiMenu, HiX } from 'react-icons/hi'
 import { fadeIn } from '../utils/motion'
 import { motion } from "framer-motion"
- 
+
 const NavBar = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -18,12 +18,12 @@ const NavBar = () => {
   ]
   return (
     <motion.nav
-      variants = {fadeIn('down',0.4)}
+      variants={fadeIn('down', 0.4)}
       initial="hidden"
       whileInView="show"
-      viewport={{once: true}}
+      viewport={{ once: true }}
 
-        className='top-0 h-[90px] left-0 right-0 border-b shadow-md  z-50 backdrop-blur-md border-gray-100 fixed  bg-white/90 '>
+      className='top-0 h-[90px] left-0 right-0 border-b shadow-md  z-50 backdrop-blur-md border-gray-100 fixed  bg-white/90 '>
       <div className='w-full   mx-auto flex  items-center justify-between  lg:px-25   md:h-20 h-16  '>
 
         {/* logo Part */}
@@ -79,7 +79,7 @@ const NavBar = () => {
             </div>
 
             <button className='w-full bg-blue-600 text-white px-6 py-2.5 mt-5   rounded-lg text-sm  hover:bg-blue-700 transition-all hover:shadow-lg  hover:shadow-blue-300'>
-              <a href="#new">Get in touch</a>
+              <a href="#new" className='max-w-full block'>Get in touch</a>
             </button>
           </div>
 

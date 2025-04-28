@@ -56,7 +56,6 @@
 
 // export default NewsletterSection
 
-
 import React from 'react'
 import { HiArrowRight } from 'react-icons/hi'
 import { motion } from 'framer-motion'
