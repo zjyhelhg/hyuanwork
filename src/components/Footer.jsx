@@ -52,13 +52,12 @@ const Footer = () => {
 
 
             <p className='text-gray-200  mb-6  px-4'>
-              Choose the field for in-depth study based on project requirements and personal interests
+              <span className='text-gray-400'>想要深入了解更多开发相关知识，拓展技术视野？那就快来加入我们的微信（WeChat）群聊吧！在这里，与各路技术高手交流探讨，解锁更多干货。</span>
             </p>
             <div className='ml-5'>
 
               <img className='object-contain h-40 w-40 mx-20' src={Weixin} alt="" />
             </div>
-
 
 
             <div className='flex gap-4 px-4 mx-20'>
@@ -77,8 +76,8 @@ const Footer = () => {
           </div>
 
           {/* footer navigation items */}
-          <div className='col-span-8'>
-            <div className='grid grid-cols-2 md:grid-cols-4 gap-10'>
+          <div className='md:col-span-8 col-span-11'>
+            <div className='grid grid-cols-2  md:grid-cols-4 gap-10'>
               {
                 Object.entries(footerLinks).map(([category, links], categoryIndex) => (
                   <div key={category}>
