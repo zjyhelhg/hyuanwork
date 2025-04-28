@@ -12,9 +12,9 @@ const NavBar = () => {
 
   const navLinks = [
     { href: '#home', label: '首页' },
-    { href: '#about', label: '关于我们' },
+    { href: '#about', label: '技能需求' },
     { href: '#services', label: '提供服务' },
-    { href: '#testimonials', label: '表彰' }
+    { href: '#testimonials', label: '关于团队' }
   ]
   return (
     <motion.nav

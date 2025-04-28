@@ -1,40 +1,48 @@
 import React from 'react'
-import { BiCategory } from 'react-icons/bi'
 import { FaFacebookF, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import Weixin from '../assets/weixin.png'
 
 const Footer = () => {
   // footer section
   const footerLinks = {
-    company: [
-      { name: 'About', href: '#' },
-      { name: 'Terms of Use', href: '#' },
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'How it Works', href: '#' },
-      { name: 'Contact Us', href: '#' },
+    front_end: [
+      { name: 'React', href: 'https://react.dev/' },
+      { name: 'Vue.js', href: 'https://vuejs.org/' },
+      { name: 'Next.js', href: 'https://nextjs.org/docs/routing/introduction' },
+      { name: 'Nuxt.js', href: 'https://nuxt.com/docs/guide/directory-structure/pages' },
+      { name: 'Vite', href: 'https://vitejs.dev/' },
     ],
-    getHelp: [
-      { name: 'Support Carrer', href: '#' },
-      { name: '24h Service', href: '#' },
-      { name: 'Quick Chat', href: '#' },
+    back_end: [
+      { name: 'Express.js', href: 'https://www.expressjs.com.cn/' },
+      { name: 'Node.js', href: 'https://nodejs.cn/#google_vignette' },
+      { name: 'Python（Django）', href: 'https://docs.djangoproject.com/ ' },
+      { name: 'Python（Flask）', href: 'https://flask.palletsprojects.com/en/2.3.x/ ' },
+      { name: 'Java（Spring Boot）', href: 'https://spring.io/projects/spring-boot#learn' },
     ],
-    support: [
-      { name: 'FAQ', href: '#' },
-      { name: 'Policy', href: '#' },
-      { name: 'Business', href: '#' },
+    SQL: [
+      { name: 'MySQL', href: 'https://dev.mysql.com/doc/' },
+      { name: 'PostgreSQL', href: 'https://www.postgresql.org/docs/' },
+      { name: 'MongoDB', href: 'https://www.mongodb.com/docs/' },
+      { name: 'Redis', href: 'https://redis.io/docs/' },
+      { name: 'Supabase', href: 'https://supabase.com/' },
     ],
-    contact: [
-      { name: 'WhatsApp', href: '#' },
-      { name: 'Support 24', href: '#' },
+    componnet: [
+      { name: 'Ant Design', href: 'https://ant.design/index-cn' },
+      { name: 'Element Plus', href: 'https://element-plus.org/zh-cn/' },
+      { name: 'Vuetify ', href: 'https://vuetifyjs.com/zh-Hans/' },
+      { name: 'shadcn-vue', href: 'https://www.shadcn-vue.com/' },
+      { name: 'daisyui', href: 'https://www.shadcn-vue.com/' },
     ],
+
   }
   return (
-    <footer className='bg-gray-50'>
+    <footer className='bg-slate-900 text-white'>
       <div className='container mx-auto px-4 sm:px-6 md:px-18 py-20'>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12'>
           {/* brand column  */}
           <div className=' col-span-12 lg:col-span-4 '>
             {/* logo */}
-            <div className='flex items-center gap-1 mb-6 '>
+            <div className='flex items-center gap-1 mb-3 '>
               <div className='flex items-center gap-1 cursor-pointer'>
                 <div className='w-4 h-4 rounded-full bg-blue-600 ml-5 opacity-70 hover:opacity-100 transition-opacity'></div>
                 <div className='w-4 h-4 rounded-full bg-red-600 -ml-2 opacity-70 hover:opacity-100  transition-opacity  '></div>
@@ -43,11 +51,17 @@ const Footer = () => {
             </div>
 
 
-            <p className='text-gray-600  mb-6  px-4'>
-              The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times.
+            <p className='text-gray-200  mb-6  px-4'>
+              Choose the field for in-depth study based on project requirements and personal interests
             </p>
+            <div className='ml-5'>
 
-            <div className='flex gap-4 px-4'>
+              <img className='object-contain h-40 w-40 mx-20' src={Weixin} alt="" />
+            </div>
+
+
+
+            <div className='flex gap-4 px-4 mx-20'>
               <a href="#" className='w-10 h-10 bg-gray-200 hover:bg-blue-600  rounded-full  flex items-center justify-center
               transition-all duration-300 text-gray-600 hover:text-white 
               '><FaFacebookF></FaFacebookF></a>
@@ -70,9 +84,9 @@ const Footer = () => {
                   <div key={category}>
                     <h3 className='text-lg font-semibold mb-4 uppercase'>{category}</h3>
                     <ul className='space-y-2'>
-                      {links.map((link,index) => (
+                      {links.map((link, index) => (
                         <li className=''>
-                          <a href="#" className='text-gray-600 hover:text-gray-900'>{link.name}</a>
+                          <a href={link.href} target="_blank" className='text-gray-200 hover:text-gray-400'>{link.name}</a>
                         </li>
                       ))}
                     </ul>
@@ -87,8 +101,8 @@ const Footer = () => {
         {/* footer bottom section */}
         <div className='border-t mt-12 border-gray-200 py-6'>
           <div className='flex flex-col md:flex-row justify-between'>
-            <p className='text-gray-600 text-sm'>Copyright @ {new Date().getFullYear()} codetutorbd.com</p>
-            <p className='text-gray-600 text-sm'>Created by Md All Manun</p>
+            <p className='text-gray-600 text-sm'>  {new Date().getFullYear()}-{new Date().getMonth() + 1}-{new Date().getDate()}</p>
+            <p className='text-gray-600 text-sm'>Created by ZhangJinyuan - Qian hao - WangYuHang</p>
           </div>
         </div>
 

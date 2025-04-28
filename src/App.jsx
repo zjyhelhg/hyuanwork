@@ -28,8 +28,8 @@ function App() {
        <MonitorSection></MonitorSection>
        <ServicesSection></ServicesSection>
        <TestimonialSection></TestimonialSection>
-       <NewsletterSection></NewsletterSection>
        <CompanyLogo></CompanyLogo>
+       <NewsletterSection></NewsletterSection>
        <Footer></Footer>
 
     </main>

@@ -17,14 +17,14 @@ const NewsletterSection = () => {
           <div className='relative flex flex-col lg:flex-row justify-between items-center lg:gap-12 gap-8 '>
             <div className=' max-w-lg text-center md:text-left   '>
               {/* left content */}
-              <h2 className='text-2xl  font-semibold text-white lg:text-4xl sm:text-3xl  mb-5'>知己知彼，请联系我们：</h2>
-              <p className='text-blue-100 text-sm  sm:text-base '>最好的服务为你准备，最好的想法你来提议</p>
+              <h2 className='md:text-xl text-xl  font-semibold text-white lg:text-4xl sm:text-3xl  mb-5'>知己知彼，请联系我们：</h2>
+              <p className='text-blue-100 md:text-sm  text-sm sm:text-base '>最好的服务为你准备，最好的想法你来提议</p>
 
             </div>
             {/* right content */}
             <div className='flex text-white/90   sm:flex-row sm:gap-0 text-left'>
 
-             <div className='text-xl flex-col w-full'>
+             <div className='md:text-xl text-sm flex-col w-full'>
              <p>电话: <span> 17771931378 / 15571959852</span> 
              
               </p> <br />

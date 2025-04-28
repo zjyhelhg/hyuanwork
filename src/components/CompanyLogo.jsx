@@ -12,7 +12,7 @@ const companyLogo = () => {
 
     <div className='w-full py-20  mx-auto overflow-hidden container flex flex-col sm:flex-row items-start    '>
       
-      <div className='w-[300px]  shrink-0 px-8 text-gray-600 border-l-4 border-blue-500 bg-white py-2 z-10 sm:text-base text-xl font-semibold sm:text-left  mb-8 sm:mb-0'>Proud partner at <br /> Hubspor & Segment</div>
+      <div className='w-[300px]  shrink-0 px-8 text-gray-600 border-l-4 border-blue-500 bg-white py-2 z-10 sm:text-base text-xl font-semibold sm:text-left  mb-8 sm:mb-0'> Tools that might <br /> Be used</div>
       <div className='flex animate-marquee  mt-3   whitespace-nowrap'>
         {logos.map((logo,index) => (
           

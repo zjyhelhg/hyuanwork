@@ -130,18 +130,21 @@ const Hero = () => {
           variants={fadeIn('up', 0.4)}
           initial='hidden'
           whileInView='show'
-          className='max-w-xl md:text-xl text-gray-600'>点击下方提交个人信息⬇️
+          className='max-w-xl md:text-xl text-gray-600'>和我们合作⬇️
 
         </motion.p>
 
         {/* form  for the  Clients */}
-        <div className="flex items-center   justify-start  ">
-          <button
+        <div className="  flex     md:items-center   justify-start  ">
+          <motion.button
+             variants={fadeIn('right', 0.2)}
+             initial='hidden'
+             whileInView='show'
             onClick={toggleDialog}
-            className="px-6 py-3 bg-blue-600 text-white  cursor-pointer rounded-lg hover:bg-blue-700 transition-all"
+            className="md:px-6 md:py-3 px-4 py-1   bg-blue-600 text-white  cursor-pointer rounded-lg hover:bg-blue-700 transition-all"
           >
-            打开收集表单
-          </button>
+            Click Me
+          </motion.button>
 
           {isOpen && (
             <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
@@ -244,7 +247,7 @@ const Hero = () => {
         variants={fadeIn('left', 0.4)}
         initial='hidden'
         whileInView='show'
-        className=' md:w-1/2 w-full  -mt-10 pl-0  md:pl-12 '>
+        className=' md:w-1/2   w-full   md:-mt-10  mt-20  pl-0  md:pl-12 '>
         <div className='relative'>
           <img src={heroImage} alt="hero Image" className='rounded-lg relative z-10 hover:scale-105  transition-all' />
         </div>
