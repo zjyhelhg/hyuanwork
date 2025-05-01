@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaFacebookF, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import Weixin from '../assets/weixin2.png'
+import Weixin from '../assets/qq2.png'
 
 const Footer = () => {
   // footer section
@@ -52,7 +52,7 @@ const Footer = () => {
 
 
             <p className='text-gray-200  mb-6  px-4'>
-              <span className='text-gray-400'>想要深入了解更多开发相关知识，拓展技术视野？那就快来加入我们的微信（WeChat）群聊吧！在这里，与各路技术高手交流探讨，解锁更多干货。</span>
+              <span className='text-gray-400'>想要深入了解更多开发相关知识，拓展技术视野？那就快来加入我们的QQ（Tencent QQ）群聊吧！在这里，与各路技术高手交流探讨，解锁更多干货。</span>
             </p>
             <div className='ml-5'>
 
