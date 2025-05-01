@@ -14,30 +14,32 @@ import Footer from './components/Footer'
 import './App.css'
 
 function App() {
- 
+
   return (
     <main className='relative min-h-screen overflow-x-hidden'>
       <div className='absolute -top-28 -ml-28 bg-gradient-to-tr from-indigo-500/20 to-pink-500/20  blur-[80px] -z-10  w-[500px] h-[500px]'>
       </div>
 
-       <NavBar></NavBar>
-       <Hero></Hero>
-       <PurposeSection></PurposeSection>
-       <FeaturesSection></FeaturesSection>
-       <ScheduleSection></ScheduleSection>
-       <MonitorSection></MonitorSection>
-       <ServicesSection></ServicesSection>
-       <TestimonialSection></TestimonialSection>
-       <CompanyLogo></CompanyLogo>
-       <NewsletterSection></NewsletterSection>
-       <Footer></Footer>
+
+
+      <NavBar></NavBar>
+      <Hero></Hero>
+      <PurposeSection></PurposeSection>
+      <FeaturesSection></FeaturesSection>
+      <ScheduleSection></ScheduleSection>
+      <MonitorSection></MonitorSection>
+      <ServicesSection></ServicesSection>
+      <TestimonialSection></TestimonialSection>
+      <CompanyLogo></CompanyLogo>
+      <NewsletterSection></NewsletterSection>
+      <Footer></Footer>
 
     </main>
   )
 }
 
 <script type="application/ld+json">
-{`
+  {`
 {
   "@context": "https://schema.org",
   "@type": "Organization",

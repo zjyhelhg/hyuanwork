@@ -1,18 +1,18 @@
 import React from 'react'
 import { FaFacebookF, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import Weixin from '../assets/weixin.png'
+import Weixin from '../assets/weixin2.png'
 
 const Footer = () => {
   // footer section
   const footerLinks = {
-    front_end: [
+    front_end_前端: [
       { name: 'React', href: 'https://react.dev/' },
       { name: 'Vue.js', href: 'https://vuejs.org/' },
       { name: 'Next.js', href: 'https://nextjs.org/docs/routing/introduction' },
       { name: 'Nuxt.js', href: 'https://nuxt.com/docs/guide/directory-structure/pages' },
       { name: 'Vite', href: 'https://vitejs.dev/' },
     ],
-    back_end: [
+    back_end_后端: [
       { name: 'Express.js', href: 'https://www.expressjs.com.cn/' },
       { name: 'Node.js', href: 'https://nodejs.cn/#google_vignette' },
       { name: 'Python（Django）', href: 'https://docs.djangoproject.com/ ' },

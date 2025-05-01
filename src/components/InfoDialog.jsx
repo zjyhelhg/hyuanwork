@@ -41,20 +41,43 @@ export default function InfoDialog() {
     }
 
     return newErrors;
-
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
     } else {
-      alert('提交成功!');
-      console.log('提交的数据:', formData);
-      // 重置表单
-      setFormData({ name: '', age: '', tel: '', email: '', tech: '' });
-      setIsOpen(false);
+      try {
+        const response = await fetch('https://mx1o4u61v0.hzh.sealos.run/nodejs_sqlite', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: formData.name,
+            age: parseInt(formData.age),
+            tech_stack: formData.tech,
+            phone_number: formData.tel,
+            qq_email: formData.email,
+          }),
+        });
+
+        const data = await response.json();
+        if (data.error) {
+          alert(data.error);
+        } else {
+          alert('提交成功!');
+          console.log('提交的数据:', formData);
+          // 重置表单
+          setFormData({ name: '', age: '', tel: '', email: '', tech: '' });
+          setIsOpen(false);
+        }
+      } catch (error) {
+        console.error('提交数据时出错:', error);
+        alert('提交数据时发生错误，请稍后重试');
+      }
     }
   };
 
